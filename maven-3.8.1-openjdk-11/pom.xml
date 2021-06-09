@@ -10,13 +10,14 @@
     </parent>
     <groupId>no.group</groupId>
     <artifactId>core</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>core</name>
     <description>No description</description>
     <properties>
         <java.version>11</java.version>
         <keycloak.version>11.0.3</keycloak.version>
         <morphia.version>2.1.4</morphia.version>
+        <jaeger.version>3.3.1</jaeger.version>
     </properties>
 
     <dependencies>
@@ -77,6 +78,12 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
+        </dependency>
+             
+        <dependency>
+            <groupId>io.opentracing.contrib</groupId>
+            <artifactId>opentracing-spring-jaeger-cloud-starter</artifactId>
+            <version>${jaeger.version}</version>
         </dependency>
     </dependencies>
 
