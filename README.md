@@ -1,0 +1,1 @@
+# docker-maven-spring-ready
